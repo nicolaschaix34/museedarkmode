@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muséum de Bordeaux</title>
+    <script src="javascript.js" defer></script>
+</head>
+<!-- test -->
+<body onscroll="cachermenu()">
+    <header>
+        <button id="darkModeToggle">Mode sombre</button>
+        <div class="divheader">
+            <div class="logonom">
+                <img src="images/LOGO.webp" alt="logo" width="100px">
+                <h1 class="titre"> Muséum Bordeaux</h1>
+            </div>
+
+            <div id="langue" class="divheader">
+                <button>Fr</button>
+                <button>En</button>
+                <button>Es</button>
+            </div>
+            <div class="menutel">
+                <button popovertarget="menutelephone">
+                    <img id="burger" src="images/burger.png" alt="Menu burger">
+                </button>
+            </div>
+            <nav popover="" id="menutelephone" class="telnavig">
+                <div class="lesdestinations">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="404.html">Infos pratiques</a></li>
+                        <li><a href="expo.html">Expositions</a></li>
+                        <li><a href="404.html">Histoire du musée</a></li>
+                        <li><a href="404.html">Rénovation</a></li>
+                        <li><a href="404.html">Newsletter</a></li>
+                        <li><a href="404.html">Et ailleurs</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        </div>
+        <hr>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="404.html">Infos Pratiques</a>
+            <a href="expo.html">Expositions</a>
+            <button id="boutonmenu" onclick="affichermenu()">
+                <span>Le musée</span>
+                <img class="icone" id="fleche" src="images/fleche.webp" alt="fleche">
+            </button>
+        </nav>
+        <div id="menuderoulant">
+            <a href="404.html">Histoire du musée</a>
+            <a href="404.html">Rénovation</a>
+            <a href="404.html">Newsletter</a>
+            <a href="404.html">Et ailleurs</a>
+        </div>
+    </header>
+    <main>
+        <section class="imagemusee">
+            <img class="fondmenu" src="images/fondmenu.webp" alt="Fond du musée" width="1700x">
+            <h1 class="titrebienvenue"> Bienvenue au Muséum de Bordeaux</h1>
+            <h2 class="soustitrebienvenue">Nous sommes actuellement ouverts</h2>
+        </section>
+        <section class="presentation">
+            <h1>Qu’est-ce que le Muséum de Bordeaux ?</h1>
+            <h2>Le musée des sciences et de la natures</h2>
+            <div class="carre">
+                <p>Le Muséum d’Histoire Naturelle de Bordeaux, situé dans le quartier des Chartrons, est un lieu
+                    incontournable pour les amateurs de sciences et de nature. Fondé en 1791, il est l'un des plus
+                    anciens
+                    muséums de France. Après une vaste rénovation, il a rouvert ses portes en 2019, offrant une
+                    expérience
+                    moderne et interactive.
+                    Plus d'un million de spécimens, dont des fossiles, des minéraux, des animaux naturalisés, et des
+                    herbiers. L’éléphant d’Afrique, emblème du musée, est une pièce maîtresse.
+                    Des dispositifs numériques et immersifs permettent d'explorer la biodiversité et les enjeux
+                    environnementaux actuels.
+                    Le musée propose des expositions thématiques captivantes, mêlant sciences naturelles, art et
+                    société.
+                    Un cadre exceptionnel : Situé dans un bâtiment historique, le musée marie architecture classique et
+                    modernité avec élégance.
+                    C’est un lieu pédagogique et ludique idéal pour les familles, les curieux et les passionnés de
+                    sciences
+                    naturelles.</p>
+                <p class="mobtext"> Le Muséum d’Histoire Naturelle de Bordeaux, situé dans le quartier des Chartrons,
+                    est un lieu
+                    incontournable pour les amateurs de sciences et de nature. Fondé en 1791, il est l'un des plus
+                    anciens
+                    muséums de France. Après une vaste rénovation, il a rouvert ses portes en 2019, offrant une
+                    expérience
+                    moderne et interactive.
+                </p>
+            </div>
+        </section>
+        <section class=fondexpos>
+            <section class="expos">
+                <h1>Expositions</h1>
+                <div id="carte" class="cards">
+                    <article class="card">
+                        <div class="content">
+                            <img src="images/card.webp" alt="Hot air balloons">
+                            <h2> Michel Quéral </h2>
+                            <h1> Cheminement d'un photographe </h1>
+                            <div class="button-container">
+                                <button id="billet"> <span><a href="expo.html">Billeterie</a></span> </button>
+                            </div>
+                            <div class="button-container2">
+                                <button id="infoexpo" onclick="location.href='expo.html'"> <span>Informations sur
+                                        l'expo</span> </button>
+                            </div>
+                        </div>
+                    </article>
+                    <article id="carte" class="card2">
+                        <div class="content2">
+                            <img src="images/card2.webp" alt="Hot air balloons">
+                            <h2>Thibaud Peaudo</h2>
+                            <h1>Le grand et splendide Lion Muzan </h1>
+                            <div class="button-container3">
+                                <button id="billet2"> <span><a href="expo.html">Billeterie</a></span> </button>
+                            </div>
+                            <div class="button-container4">
+                                <button id="infoexpo2" onclick="location.href='expo.html'"> <span>Informations sur
+                                        l'expo</span> </button>
+                            </div>
+                        </div>
+                    </article>
+            </section>
+        </section>
+        <section id="reserver">
+            <h1 class="tarifstitre">Tarifs</h1>
+            <h3>Un billet vous donne accès à toutes les collections, vous pouvez <br> également réserver une place
+                pour les expositions temporaires</h3>
+            <div id="Infos_tarifs">
+                <div>
+                    <section id="tarifplein" class="tarif-box">
+                        <p class="titreprix">Tarif pleins :</p>
+                        <p class="prix">6€</p>
+                    </section>
+                    <section id="billetcouple" class="tarif-box">
+                        <p class="titreprix">Billet Muséum / Jardin botanique :</p>
+                        <p class="prix">10€</p>
+                    </section>
+                    <section id="tarifreduit" class="tarif-box">
+                        <p class="titreprix">Tarif reduit</p>
+                        <p class="prix">3,50€</p>
+                    </section>
+                </div>
+                <div>
+                    <section id="etudiant" class="tarif-box">
+                        <p class="titreprix">Etudiants moins 26 ans</p>
+                        <p class="prix">2 €</p>
+                    </section>
+                    <section id="tarif618ans" class="tarif-box">
+                        <p class="titreprix">Tarif 6 - 18 ans</p>
+                        <p class="prix">3,50€</p>
+                    </section>
+                </div>
+            </div>
+            <input class="styled" type="button" value="Acheter" />
+        </section>
+        <section class="horairesinfos">
+            <div class="horaires">
+                <h1> Horaires</h1>
+                <h2> Ouvert du mardi au dimanche</h2>
+                <br>
+                <h2>Ferié les jours fériés</h2>
+                <h2>Sauf les 14 juillet et 15 août</h2>
+                <br>
+                <h2>D'octobre à mars : 10h30 - 17h30</h2>
+                <h2>D'avril à septembre : 10h30 - 18h00</h2>
+            </div>
+            <div class="infospratiques">
+                <h1> Infos Pratiques</h1>
+                <h2> Accessible aux personnes à mobilité réduite</h2>
+                <h2>Toilettes</h2>
+                <h2>Sièges pliants à chaque étage</h2>
+                <h2>Casiers</h2>
+                <h2>Boutique souvenir</h2>
+                <h2>Table à langer</h2>
+                <h2>Pas de wifi</h2>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <ul>
+            <li><a href="">Contact</a></li>
+            <li><a href="">À propos</a></li>
+            <li><a href="">Mentions légales</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Accessibilité</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
